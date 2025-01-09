@@ -80,7 +80,7 @@ search:
 
 server:
   # Is overwritten by ${SEARXNG_PORT} and ${SEARXNG_BIND_ADDRESS}
-  port: 8081
+  port: 8888
   bind_address: "127.0.0.1"
   # public URL of the instance, to ensure correct inbound links. Is overwritten
   # by ${SEARXNG_URL}.
@@ -112,7 +112,7 @@ server:
 redis:
   # URL to connect redis database. Is overwritten by ${SEARXNG_REDIS_URL}.
   # https://docs.searxng.org/admin/settings/settings_redis.html#settings-redis
-  url: false
+  url: true
 
 ui:
   # Custom static path - leave it blank if you didn't change
