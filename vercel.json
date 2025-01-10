@@ -2,18 +2,15 @@
     "version": 2,
     "builds": [
       {
-        "src": "./start.sh",
-        "use": "@vercel/static-build"
+        "src": "python3 ./searx/webapp.py",
+        "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "start.sh"
+        "dest": "searx/webapp.py"
       }
-    ],
-    "env": {
-      "REDIS_URL": "redis://<username>:<password>@<host>:<port>/<db>"
-    }
+    ]
   }
   
