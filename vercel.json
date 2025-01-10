@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "python3 ./searx/webapp.py",
+        "src": "pip install -r requirements.txt && pip install -r requirements-dev.txt && python3 ./searx/webapp.py",
         "use": "@vercel/python"
       }
     ],
